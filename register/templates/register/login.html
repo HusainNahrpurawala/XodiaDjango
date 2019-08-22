@@ -1,0 +1,12 @@
+<form method="post">
+    {% csrf_token %}<pre>
+    Username : <input type="text" name="username" />
+
+    Password : <input type="password" name="password"/>
+    
+    <input type="submit" value="submit"/></pre>
+</form>
+<br><br>
+<a href={% url 'register:signup' %}>
+    New User? Sign up
+</a>

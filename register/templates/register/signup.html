@@ -1,0 +1,25 @@
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<form method="post">
+    {% csrf_token %}<pre>
+    Username : <input type="text" name="username" />
+
+    E-mail   : <input type="email" name="email" />
+
+    College  : <input type="text" name="college" />
+
+    Mobile   : <input type="text" name="mobile" />
+
+    Password : <input type="password" name="password"/>
+
+   <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="6LcuhrMUAAAAAF6M5JA21I5M9QyKxRlgxT3XN7VG"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+
+    </pre>
+</form>
+<a href={% url 'register:login' %}>
+    Already registered? Login
+</a>

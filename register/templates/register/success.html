@@ -1,0 +1,23 @@
+{% if profiles.is_active%}
+<h2>
+    SUCCESS
+    <br>
+    Logged in as {{profiles.user.username}}
+
+</h2>
+<a href={% url 'register:logout' profiles.user.id %} >
+    <input type="button" value="LOGOUT"/>
+</a>
+
+{% else%}
+<h2>
+    YOUR ACCOUNT IS NOT ACTIVE <br>
+    PLEASE LOGIN  <br>
+     <a href={% url 'register:login'%} >
+        <input type="submit" value="LOGIN">
+    </a>
+
+</h2>
+{% endif%}
+
+
