@@ -14,7 +14,6 @@ class Profile(models.Model):
     points = models.IntegerField(default=0)
     college = models.CharField(max_length=100, default="")
     mobile = models.CharField(max_length=13, default="")
-    is_active = models.BooleanField(default=False)
 
     # bot_path
     # bot_extension
